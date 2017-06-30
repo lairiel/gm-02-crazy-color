@@ -1,1 +1,1 @@
-gm-02-crazy-color
+https://rawgit.com/lairiel/gm-03-crazy-color/master/index.html

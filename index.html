@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle</title>
+  <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Lobster', cursive;
+  } 
+
+ .header {
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #CDDC39;
+    font-family: 'Lobster', cursive;
+}
+
+  .main {
+    width: auto;
+    height: 531px;
+  }
+
+  .footer {
+    width: auto;
+    height: 61px;
+    font-size: 27px;
+    color: white;
+    background-color: #CDDC39;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .footer-frase {
+    width: 470px;
+    height: 55px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    /*background-color: red;*/
+    position: absolute;
+    left: 34%;
+  }
+
+  .table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+  }
+
+  .puzzle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #CDDC39;
+    cursor: pointer;  
+  }
+
+   </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="header">Нарисуй свою уникальную картину!</div>
+    <div class="main"></div>
+      <table class="table">
+        <tr>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="0" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="1" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="2" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="3" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="4" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="5" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="6" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="7" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="8" data-element-col-index="25"></td>
+        </tr>
+        <tr>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="0"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="1"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="2"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="3"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="4"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="5"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="6"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="7"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="8"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="9"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="10"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="11"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="12"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="13"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="14"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="15"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="16"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="17"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="18"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="19"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="20"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="21"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="22"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="23"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="24"></td>
+          <td class="puzzle" data-element-row-index="9" data-element-col-index="25"></td>
+        </tr>
+      </table>
+    <div class="footer"><div class="footer-frase"></div></div>
+  </body>
+  </html>
+
+  <script type="text/javascript">
+
+ //  структура
+  var listRowListPuzzle = [];
+  for (var i = 0; i < 10; i++) {
+    listRowListPuzzle[i] = []
+    for (var j = 0; j < 26; j++) {
+      listRowListPuzzle[i][j] = {"background-color": "red"}
+      }
+  }
+
+  // элементы
+  var listElementRow = document.querySelectorAll("table tr");
+  var headerSurprise = document.querySelectorAll(".header")
+
+  var listRowListElementPuzzle = [];
+  for (var i = 0; i < listElementRow.length; i++) {
+    listRowListElementPuzzle[i] = listElementRow[i].querySelectorAll(":scope .puzzle");
+  }
+
+  // дизайн
+  var color = ["red", "pink", "purple", "deep purple", "indigo", "blue", "light blue", "teal", "green", "light green", "lime", "yellow", "amber", "orange", "deep orange", "brown", "grey", "blue grey"];
+
+  var colorHesh = ["#F44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"];
+
+  for (var i = 0; i < listRowListElementPuzzle.length; i++) {
+    for (var j = 0; j < listRowListElementPuzzle[i].length; j++) {
+      listRowListElementPuzzle[i][j].onclick = onclickPuzzle;
+      listRowListElementPuzzle[i][j].onmouseover = onclickPuzzle;
+    }
+  } 
+
+  function redrawPuzzle (rowIndex, colIndex) {
+    var puzzle = listRowListPuzzle[rowIndex][colIndex];
+    var elementPuzzle = listRowListElementPuzzle[rowIndex][colIndex];
+    elementPuzzle.style["background-color"] = puzzle["background-color"];
+  }
+
+  function onclickPuzzle(event) {
+  var currentRowIndex = event.currentTarget.dataset["elementRowIndex"];
+  var currentColIndex = event.currentTarget.dataset["elementColIndex"];
+  var puzzle = listRowListPuzzle[currentRowIndex][currentColIndex];
+  puzzle["background-color"] = getRandomColor();
+  redrawPuzzle(currentRowIndex, currentColIndex);
+}
+
+ function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomColor() {
+  var listRandomColor = ["#F44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"];
+  var randomIndex = getRandomInt(0, listRandomColor.length-1);
+  return listRandomColor[randomIndex];
+}
+
+function redrawAllPuzzle() {
+  for (var i = 0; i < listRowListElementPuzzle.length; i++) {
+    for (var j = 0; j < listRowListElementPuzzle[i].length; j++) {
+      listRowListElementPuzzle[i][j] = redrawPuzzle();
+    }
+  } 
+}
+
+function onclickHeader () {
+  headerSurprise.onclick = redrawAllPuzzle();
+}
+
+  </script>
